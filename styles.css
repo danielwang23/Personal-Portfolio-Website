@@ -49,20 +49,24 @@ html {
     /**/
     /*background-image: url(/images/backgroundmountain.jpeg);*/
     /*background-color: rgb(255, 249, 208);*/
-    background-image: url(images/backgroundmountain.jpeg);
+    
     width: 100%;
     height: 100vh;
-    background-size: cover;
+    
     z-index: -1;
     position: relative;
+    background-image: url(./images/backgroundmountain.jpeg);
+    background-size: cover;
+    
 }
 
-.back .overlay {
+.overlay {
     background: #ecedef;
     width: 100%;
     height: 100%;
     opacity: 0.35;
     position: absolute;
+    
 }
 
 
