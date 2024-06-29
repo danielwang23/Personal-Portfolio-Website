@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Wang's Website</title>
+    <link rel="icon" type="image/x-icon" href="/images/DW.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+  
+    <div class="navbar">
+        
+            <a href="./index.html" class="navbar-title">Daniel Wang</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul id="item" class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#homelink" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#aboutlink" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#experiencelink" class="navbar__links">Experience</a>
+                    <!--Skills(Languages), classes taken, organizations involved-->
+                </li>
+                <li class="navbar__item">
+                    <a href="#projectslink" class="navbar__links">Projects</a>
+                    <!--Apps, Websites, research done (biostats R), etc-->
+                </li>
+                <li class="navbar__item">
+                    <a href="#contactlink" class="navbar__links">Contact</a>
+                    <!--Resume Link, Contact Email, Location Based-->
+                </li>
+            </ul>
+        
+    </div>
+    <script src="menu.js"></script>
+
+    <div>
+        <p id="homelink" class="emptyDivHome"></p>
+    </div>
+
+    <div class="back">
+        <div class="overlay"></div>
+    </div>
+
+    <div class="content">
+        <div class="mid">
+            <h1 id="home">Daniel Wang</h1>
+            <div class="outer-headings">
+                <div class="words">
+                    <p class="static">I'm a </p>
+                    <span>
+                        Student <br>
+                        Athlete <br>
+                        Creator <br>
+                    </span>
+                </div>
+            </div>
+            <a href="https://github.com/danielwang23" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/daniel-wang23/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <div>
+            <p id="aboutlink" class="emptyDiv"></p>
+        </div>
+        
+        <section class="About-Section">
+            <div class="section-titles">
+                <h1 id="about">About</h1>
+            </div>
+            <div class="intro-container">
+                <p id="intro">Hi! My name is Daniel Wang and I am a rising sophomore at UNC Chapel Hill pursuing degrees in Computer Science and Data Science.</p>
+            </div>
+            <br>
+            <div class="aboutcontainer">
+                <div class="pic">
+                    <img id="headshot" src="./images/mild_smile_shot.JPG" alt="">
+                </div>
+
+                <div class="description">
+                    <p id="body">
+                        I am highly interested in exploring AI/Machine learning, computer vision, data analytics, 
+                        and bioinformatics.
+                        I believe my strong ability to problem solve, collaborate through teamwork, 
+                        and bring creative ideas will allow me to thrive in a software, statistics, and data analytics industry position.
+                        I am excited to apply my computational and analytical skills 
+                        to extract meaningful insights from data and expand my knowledge within these fields. 
+                    </p>
+                    <br>
+                    <p id="body">
+                        In my free time, I enjoy playing and watching tennis, 
+                        reading motivational books, traveling, nature walks, 
+                        sunsets, and getting involved with social and outdoor activities.
+                    </p>
+                    <br>
+                    <p id="end">
+                        Here are a few clubs I am involved in!  CCSG AI@UNC Club Tennis Asian American Students Association. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--Put CSSG and AI@UNC LGOGOS wiht links under about section-->
+
+        <div>
+            <p id="experiencelink" class="emptyDiv"></p>
+        </div>
+        <section class="Experience-Section">
+            <div class="section-titles">
+                <h1 id="experience">Experience</h1>
+            </div>
+            <div class="Languages">
+                <h3>Languages</h3>
+            </div>
+            <div class="certifications">
+                <h3>Certifications</h3>
+            </div>
+
+        </section>
+
+        <div>
+            <p id="projectslink" class="emptyDiv"></p>
+        </div>
+        <section class="Project-Section">
+            <div class="section-titles">
+                <h1 id="projects">Projects</h1>
+            </div>
+
+        </section>
+
+        <div>
+            <p id="contactlink" class="emptyDiv"></p>
+        </div>
+        <section class="Contact-Section">
+            <div class="section-titles">
+                <h1 id="contact">Contact</h1>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="./index.html" class="navbar-title">Daniel Wang</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#experience" class="navbar__links">Experience</a>
+                    <--Skills(Languages), classes taken, organizations involved--
+                </li>
+                <li class="navbar__item">
+                    <a href="#projects" class="navbar__links">Projects</a>
+                    <--Apps, Websites, research done (biostats R), etc--
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact" class="navbar__links">Contact</a>
+                    <--Resume Link, Contact Email, Location Based--
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="app.js"></script>
+
+    <div class="ALLSECTIONS">
+        <--===Main Page Section===--
+        <--Have linkedIn, Github account linked w logo--
+        <section class="Main-Page">
+            <div id="home">
+                <h1>Daniel Wang</h1>    
+            </div>
+        </section>
+
+        <--===About Me Section===--
+        <section class="About-Me">
+            <div id="about">
+                <p>Hi! My name is Daniel Wang and I am a rising freshman at UNC Chapel Hill.</p> 
+            </div> 
+        </section>
+
+        <--===Experience Section===--
+        <section class="Experience-Section">
+            <div id="experience">
+                <p>Experience</p>
+            </div> 
+        </section>
+
+        <--===Projects Section===--
+        <section class="Project-Section">
+            <div id="projects">
+                <p>Project</p> 
+            </div> 
+        </section>
+
+        <--===Contact Section===--
+        <section class="Contact-Section">
+            <div id="contact">
+                <p>Contact</p>
+            </div> 
+        </section>
+    </div>
+    -->
+
+</body>
+
+
+</html>
