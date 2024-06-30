@@ -299,6 +299,9 @@ html {
     .pic {
         justify-content: center; /* Center the image on small screens */
     }
+    #headshot {
+        justify-content: center;
+    }
 }
 
 .description .p{
