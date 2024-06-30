@@ -290,7 +290,7 @@ html {
     .aboutcontainer .description {
         flex: 1 1 100%; /* On small screens, make them full width */
         max-width: 100%;
-        min-width: 100%;
+
     }
     .aboutcontainer {
         flex-direction: column; /* Stack items vertically on small screens */
@@ -309,6 +309,126 @@ html {
     padding-bottom: 1.1rem;
     word-wrap: break-word;   
 }
+
+
+/*
+.clubs {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clubpics {
+    display: flex;
+    justify-content: flex-end;
+
+    flex: 1 1 45%;
+    max-width: 100px;
+    min-width: 5cap;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 2rem;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+*/
+
+/* ==== Club CSS Start ==== */
+
+.CLUB-SECTION {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.club-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 100%; /* Adjust max-width as needed */
+}
+
+.club-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 1rem; /*could do 10px*/
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit; /* Maintain text color */
+    width: 250px; /* Adjust width as needed */
+    position: relative; /* Needed for positioning the hover effect */
+    overflow: hidden; /* Hide overflow for hover effect */
+    transition: transform 0.3s;
+}
+
+.club-box:hover .club-hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    opacity: 0.8; /* Show the hover effect */
+   
+}
+
+.club-image {
+    width: 100px; /* Adjust image size as needed */
+    height: 100px; /* Adjust image size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    /* border: 1px solid rgb(8, 8, 8); */
+    padding: 2px;
+    
+}
+
+.club-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.club-description {
+    font-size: 1rem;
+    color: rgb(51, 51, 51);
+}
+
+
+.club-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(125, 223, 255, 0.7); /* Light blue with transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s;
+    color: #020202; /* Text color */
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    backdrop-filter: blur(50px); 
+}
+
+.club-box:hover .club-image {
+    opacity: 0.3;
+}
+.club-box:hover .club-title {
+    opacity: 0.05;
+}
+
+.club-box:hover .club-description {
+    opacity: 0.05;
+}
+/* ====Club CSS End==== */
+
+
+
 
 
 .section-titles {
@@ -354,6 +474,11 @@ html {
     left: 50%;
     transform: translateX(-50%);
 }
+
+
+
+
+
 
 #intro {
     font-size: 1.1rem; 
