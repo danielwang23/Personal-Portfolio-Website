@@ -290,6 +290,7 @@ html {
     .aboutcontainer .description {
         flex: 1 1 100%; /* On small screens, make them full width */
         max-width: 100%;
+        min-width: 100%;
     }
     .aboutcontainer {
         flex-direction: column; /* Stack items vertically on small screens */
