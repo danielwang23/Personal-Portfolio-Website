@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const skills = [
         { name: 'Python', img: './images/pythonlogo.png', level: '90%' },
         { name: 'Java', img: './images/javalogo.svg', level: '80%' },
-        { name: 'JavaScript', img: './images/JSlogo.png', level: '55%' },
+        { name: 'JavaScript', img: './images/JSLogo.png', level: '55%' },
         { name: 'HTML & CSS', img: './images/html_css_logo.png', level: '85%' },
         { name: 'Swift', img: './images/swiftlogo.png', level: '40%' },
         { name: 'R', img: './images/Rlogo.png', level: '40%' }
