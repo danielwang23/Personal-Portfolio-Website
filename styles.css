@@ -516,6 +516,134 @@ html {
     border: 5px dashed black;
 }
 
+.expsection-title {
+    padding-top: 20px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.expsection-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    background: black;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.skill-box {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+.skill-box img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.progress-bar {
+    flex: 1;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.progress {
+    height: 10px;
+    background-color: #76c7c0;
+}
+
+
+.certifications {
+    margin-top: 2rem;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; 
+}
+
+.expsection2-title {
+    /*
+    padding-top: 20px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    */
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    width: fit-content;
+    
+}
+
+.expsection2-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /*Issues here may arise with the bar line */
+    height: 2px;
+    width: 100%;
+    background: black;
+
+}
+
+.certification-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow the boxes to wrap if they don't fit in one line */
+    gap: 10px; /* Adjust the gap between the boxes */
+}
+
+.certification-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    width: Auto; /* Adjust to desired square size */
+    height: 150px; /* Adjust to desired square size */
+    justify-content: center;
+    padding: 20px;
+    
+
+}
+
+.certification-box img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.certification-box p {
+    margin: 0;
+    text-align: center;
+}
+
+.certification-box:hover {
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
 
 
 
@@ -539,8 +667,6 @@ html {
     min-height: 100vh;
     border: 5px dashed black;
 }
-
-
 
 
 /* === Mobile Menu === */
