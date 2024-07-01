@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const skills = [
-        { name: 'Python', img: 'path/to/python.png', level: '90%' },
-        { name: 'Java', img: 'path/to/java.png', level: '80%' },
-        { name: 'JavaScript', img: 'path/to/javascript.png', level: '85%' },
-        { name: 'HTML & CSS', img: 'path/to/html_css.png', level: '95%' },
-        { name: 'Swift', img: 'path/to/swift.png', level: '70%' },
-        { name: 'R', img: 'path/to/r.png', level: '75%' }
+        { name: 'Python', img: './images/pythonlogo.png', level: '90%' },
+        { name: 'Java', img: './images/javalogo.svg', level: '80%' },
+        { name: 'JavaScript', img: './images/JSlogo.png', level: '55%' },
+        { name: 'HTML & CSS', img: './images/html_css_logo.png', level: '85%' },
+        { name: 'Swift', img: './images/swiftlogo.png', level: '40%' },
+        { name: 'R', img: './images/Rlogo.png', level: '40%' }
     ];
 
     /* Certifcations part commented out because used HTML/CSS instead

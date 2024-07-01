@@ -513,7 +513,7 @@ html {
 
 .Experience-Section {
     min-height: 100vh;
-    border: 5px dashed black;
+    
 }
 
 .expsection-title {
@@ -521,6 +521,7 @@ html {
     position: relative;
     display: inline-block;
     margin-bottom: 2rem;
+    margin-left: 2rem;
 }
 
 .expsection-title::after {
@@ -533,10 +534,12 @@ html {
     background: black;
 }
 
+/* ====Styled JS For this part==== */
 .skills-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    display: 
     
 }
 
@@ -548,12 +551,15 @@ html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding-top: 10px;
+    margin-left: 2rem;
+    margin-right: 55%; /* Use diff method later to fix length*/
 }
 
+
 .skill-box img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 60px;
+    height: 50px;
+    margin-right: 20px;
 }
 
 .progress-bar {
@@ -566,7 +572,7 @@ html {
 
 .progress {
     height: 10px;
-    background-color: #76c7c0;
+    background-color: rgb(126, 194, 254);
 }
 
 
@@ -589,6 +595,7 @@ html {
     margin-bottom: 20px;
     position: relative;
     width: fit-content;
+    margin-left: 2rem;
     
 }
 
@@ -621,17 +628,18 @@ html {
     color: inherit;
     transition: background-color 0.3s;
     margin-bottom: 10px;
-    width: Auto; /* Adjust to desired square size */
-    height: 150px; /* Adjust to desired square size */
+    width: 250px; 
+    height: 150px; 
     justify-content: center;
     padding: 20px;
-    
+    margin-left: 2rem;
+    /* FIND A WAY TO MAKE THE PADDING SPACE AROUND FOR THE DIV BOXES FOR EACH NEW CERTIFICATION */
 
 }
 
 .certification-box img {
-    width: 40px;
-    height: 40px;
+    width: auto;
+    height: 80px;
     margin-bottom: 10px;
 }
 
