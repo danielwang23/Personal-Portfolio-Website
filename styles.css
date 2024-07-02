@@ -482,11 +482,6 @@ html {
     transform: translateX(-50%);
 }
 
-
-
-
-
-
 #intro {
     font-size: 1.1rem; 
     /*
@@ -509,11 +504,47 @@ html {
     margin-top: 30px;
 }
 
+
+
 /*===EXPERIENCE CONTENT STLYING===*/
 
 .Experience-Section {
     min-height: 100vh;
-    
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+   
+}
+
+.section-titles {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.left-section,
+.right-section {
+    width: 50%;
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.left-section {
+    width: 50%;
+}
+
+.right-section {
+    width: 50%;
+    text-align: center;
+    height: 50vh; /*Adjusts size of resume div*/
+}
+
+.right-section .resume-title {
+    margin-top: 0;
+    text-align: center;
 }
 
 .expsection-title {
@@ -534,6 +565,56 @@ html {
     background: black;
 }
 
+
+.resume-title {
+    padding-top: 20px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.resume-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    background: black;
+}
+
+.resume-content #resume_hand_link {
+    text-decoration: none;
+    color: rgb(126, 194, 254);
+    display: inline-block;
+    position: relative;
+}
+
+#resume_hand_link:hover {
+    color: #5b8cff;
+    border-bottom: 1.5px solid #5b8cff;
+    border-radius: 1px;
+    transition: 0.05s;
+}
+
+.resume-content {
+    min-width: 40%;
+    text-align: center;
+    justify-content: center;
+    max-width: inherit;
+}
+
+.fa-hand-point-right, .fa-hand-point-left {
+    color: initial;
+}
+
+#resume_hand_link:hover .fa-hand-point-right,
+#resume_hand_link:hover .fa-hand-point-left {
+    color: #5b8cff;
+    transition: 0.05s;
+}
+
 /* ====Styled JS For this part==== */
 .skills-list {
     display: flex;
@@ -552,14 +633,18 @@ html {
     border-radius: 5px;
     padding-top: 10px;
     margin-left: 2rem;
-    margin-right: 55%; /* Use diff method later to fix length*/
+    /* margin-right: 55%; */
 }
-
 
 .skill-box img {
     width: 60px;
     height: 50px;
     margin-right: 20px;
+}
+
+.skill-box p {
+    flex: 0 0 80px; /* Fixed width to align progress bars */
+    margin: 0;
 }
 
 .progress-bar {
@@ -573,6 +658,8 @@ html {
 .progress {
     height: 10px;
     background-color: rgb(126, 194, 254);
+    text-align: right;
+    
 }
 
 
@@ -652,8 +739,7 @@ html {
     background-color: rgba(173, 216, 230, 0.5);
 }
 
-
-
+ 
 
 
 
