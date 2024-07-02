@@ -777,6 +777,14 @@ html {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Edit color of diff project boxes by editing the id */
+#projectbox2 {
+    background-color: coral;
+}
+
+
+
+
 .project-title {
     margin-bottom: 20px;
     font-size: 1.3rem;
@@ -833,6 +841,15 @@ html {
 .view-project a:hover {
     background-color: #0056b3;
 }
+
+
+
+
+
+
+
+
+
 
 /*===CONTACT CONTENT STLYING===*/
 
