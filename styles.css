@@ -747,7 +747,7 @@ html {
 
 .Project-Section {
     min-height: 100vh;
-    border: 5px dashed black;
+    
 }
 
 .proj-containers {
@@ -787,6 +787,7 @@ html {
     font-size: 1.05rem;
     margin-bottom: 10px;
     text-align: start;
+    max-width: 375px;
 }
 
 .project-languages {
