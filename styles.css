@@ -553,16 +553,17 @@ html {
     display: inline-block;
     margin-bottom: 2rem;
     margin-left: 2rem;
+    font-size: 1.5rem;
 }
 
 .expsection-title::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -5px;
-    height: 2px;
+    bottom: -8px;
+    height: 4px;
     width: 100%;
-    background: black;
+    background: rgb(126, 194, 254);
 }
 
 
@@ -572,6 +573,7 @@ html {
     display: inline-block;
     margin-bottom: 2rem;
     margin-left: 2rem;
+    font-size: 1.5rem;
 }
 
 .resume-title::after {
@@ -579,9 +581,9 @@ html {
     position: absolute;
     left: 0;
     bottom: -5px;
-    height: 2px;
+    height: 4px;
     width: 100%;
-    background: black;
+    background: rgb(126, 194, 254);
 }
 
 .resume-content #resume_hand_link {
@@ -593,8 +595,8 @@ html {
 
 #resume_hand_link:hover {
     color: #5b8cff;
-    border-bottom: 1.5px solid #5b8cff;
-    border-radius: 1px;
+    /* border-bottom: 1.5px solid #5b8cff; */
+    /* border-radius: 1px; */
     transition: 0.05s;
 }
 
@@ -657,7 +659,7 @@ html {
 
 .progress {
     height: 10px;
-    background-color: rgb(126, 194, 254);
+    background-color: #5b8cff;;
     text-align: right;
     
 }
@@ -683,6 +685,7 @@ html {
     position: relative;
     width: fit-content;
     margin-left: 2rem;
+    font-size: 1.5rem;
     
 }
 
@@ -691,9 +694,9 @@ html {
     position: absolute;
     left: 0;
     bottom: -5px; /*Issues here may arise with the bar line */
-    height: 2px;
+    height: 4px;
     width: 100%;
-    background: black;
+    background: rgb(126, 194, 254);
 
 }
 
@@ -739,20 +742,95 @@ html {
     background-color: rgba(173, 216, 230, 0.5);
 }
 
- 
-
-
-
-
-
-
-
 
 /*===PROJECT CONTENT STLYING===*/
 
 .Project-Section {
     min-height: 100vh;
     border: 5px dashed black;
+}
+
+.proj-containers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.project-box {
+    background-color: #53f0dd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    border-radius: 5px;
+    width: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /*=== These 3 lines of code below ensures that view-proj-on box alwyas on bottom of box===*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    text-align: start;
+}
+
+.project-description {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.project-languages {
+    margin-bottom: 10px;
+    color: black;
+    text-align: start;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.project-gif {
+    display: flex;
+    /*===Option to center image by uncommenting out phrase below===*/
+    /* justify-content: center; */
+}
+
+.project-gif img {
+    max-width: 300px;
+    
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.view-project {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font: bold;
+    margin-top: auto;
+}
+
+.view-project a {
+    display: block;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.view-project a:hover {
+    background-color: #0056b3;
 }
 
 /*===CONTACT CONTENT STLYING===*/
