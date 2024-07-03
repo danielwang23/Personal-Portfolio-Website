@@ -847,17 +847,175 @@ html {
 
 
 
-
-
-
-
 /*===CONTACT CONTENT STLYING===*/
 
 .Contact-Section {
-    min-height: 100vh;
-    border: 5px dashed black;
+    min-height: 50vh;
 }
 
+.contact-container {
+    display: flex;
+    height: 100vh;
+}
+
+.contact-leftdiv {
+    width: 60%;
+    padding: 15px;
+    margin-top: 1rem;
+}
+
+.contact-leftdiv p {
+    margin-bottom: 3rem;
+}
+
+.contact-rightdiv {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cdiv-topright {
+    height:40%;
+}
+
+.map-titlediv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cdiv-bottomright {
+    height: 60%;
+}
+
+.c-header-text {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 4px;
+}
+
+#c-icon {
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border-width: 20px;
+    border: 1.5px solid black;
+    color: rgb(126, 194, 254);
+}
+
+#c-icon:hover {
+    background-color: rgb(255, 255, 255);
+    color: #007BFF;
+}
+
+.email-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+    color: #007BFF;
+    transition: 0.2s;
+}
+
+iframe {
+    width: 100%;
+    height: 95%;
+    padding: 10px 0px;
+    padding-bottom: 20px;
+}
+
+/* LOCATION EMBED MAP SWITCH */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    /* margin-left: 67%; */
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* ===FOOTER SECTION=== */
+footer {
+    height: 30vh;
+    max-height: 20vh;
+    background-color: rgb(126, 194, 254);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content h1 {
+    margin: 0;
+    font-size: 2rem;
+    
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: black;
+    margin: 0 10px;
+    font-size: 2rem;
+    transition: color 0.3s;
+    
+}
+
+.social-icons a:hover {
+    color: #007BFF;
+}
+
+.footer-bottom {
+    
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
 
 /* === Mobile Menu === */
 

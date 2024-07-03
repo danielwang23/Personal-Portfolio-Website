@@ -284,96 +284,50 @@
             <div class="section-titles">
                 <h1 id="contact">Contact</h1>
             </div>
-            <div>
-                <p>Contact Me: Please</p>
+            <div class="contact-container">
+                <div class="contact-leftdiv">
+                    <p><i class="fa-solid fa-location-dot" id="c-icon"></i> <span class="c-header-text">Location:</span> Chapel Hill, NC</p>
+                    <p><i class="fa-solid fa-envelope" id="c-icon"></i> <span class="c-header-text">Email:</span> <a href="mailto:dalbertw@unc.edu" class="email-link" target="_blank">dalbertw@unc.edu</a></p>
+                    <p><i class="fa-solid fa-phone" id="c-icon"></i> <span class="c-header-text">Phone:</span> (412) 628-4603</p>
+                </div>
+                <div class="contact-rightdiv">
+                    <div class="cdiv-topright">
+                        <div class="map-titlediv">
+                            <h3><i class="fa-solid fa-map-location"></i></i> Location </h3>
+                            <label class="switch">
+                                <input type="checkbox" id="toggle-map-mode">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <iframe id="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10746.844677925506!2d-79.05284622215449!3d35.90837345098078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc2d2cb17aaeb%3A0xb33bf0976497e0e0!2sUniversity%20of%20North%20Carolina%20at%20Chapel%20Hill!5e0!3m2!1sen!2sus!4v1720039200959!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <script src="./maptoggle.js"></script>
+                    </div>
+                    <div class="cdiv-bottomright">
+                        <h3>Message Me Directly!</h3>
+                    </div>
+                </div>
+                
             </div>
         </section>
+        
+        <footer>
+            <div class="footer-content">
+                <h1>Daniel Wang</h1>
+                <div class="social-icons">
+                    <a href="https://github.com/danielwang23" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-wang23/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span><em> <b>Daniel Wang</b>. All rights reserved. Last updated: </em><span id="last-updated"></span></p>
+            </div>
+        </footer>
+        <script src="footer.js"></script>
 
+        <!-- Figure out way to adjust contact and footer size-->
     </div>
-
-
-
-
-
-
-
-
-
-
-
-    <!--
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="./index.html" class="navbar-title">Daniel Wang</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="#home" class="navbar__links">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#about" class="navbar__links">About</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#experience" class="navbar__links">Experience</a>
-                    <--Skills(Languages), classes taken, organizations involved--
-                </li>
-                <li class="navbar__item">
-                    <a href="#projects" class="navbar__links">Projects</a>
-                    <--Apps, Websites, research done (biostats R), etc--
-                </li>
-                <li class="navbar__item">
-                    <a href="#contact" class="navbar__links">Contact</a>
-                    <--Resume Link, Contact Email, Location Based--
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <script src="app.js"></script>
-
-    <div class="ALLSECTIONS">
-        <--===Main Page Section===--
-        <--Have linkedIn, Github account linked w logo--
-        <section class="Main-Page">
-            <div id="home">
-                <h1>Daniel Wang</h1>    
-            </div>
-        </section>
-
-        <--===About Me Section===--
-        <section class="About-Me">
-            <div id="about">
-                <p>Hi! My name is Daniel Wang and I am a rising freshman at UNC Chapel Hill.</p> 
-            </div> 
-        </section>
-
-        <--===Experience Section===--
-        <section class="Experience-Section">
-            <div id="experience">
-                <p>Experience</p>
-            </div> 
-        </section>
-
-        <--===Projects Section===--
-        <section class="Project-Section">
-            <div id="projects">
-                <p>Project</p> 
-            </div> 
-        </section>
-
-        <--===Contact Section===--
-        <section class="Contact-Section">
-            <div id="contact">
-                <p>Contact</p>
-            </div> 
-        </section>
-    </div>
-    -->
+    
 
 </body>
-
 
 </html>
