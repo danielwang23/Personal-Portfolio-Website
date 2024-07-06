@@ -975,6 +975,163 @@ input:checked + .slider:before {
     transform: translateX(20px);
 }
 
+/* ===Contact form section=== */
+
+.contactform-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #2196F3;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 75%;
+    height: 4px;
+    background-color: #1383de;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.field .item {
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #010101;
+    border-radius: 50px;
+    background-color: #ededed;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: -5px;
+}
+
+.textarea-field textarea {
+    height: 10px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+form .textarea-field .item {
+    resize: none; /*Makes it so that you cant resize the Main text message area*/
+    height: 120px;
+    padding-top: 15px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.field .item::placeholder {
+    color: rgb(94, 92, 92, 0.7);
+}
+
+.field .error-txt {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: 2px 5px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .error-txt {
+    margin-top: -2px;
+}
+
+.item:focus {
+    border: 2px solid rgb(126, 194, 254);
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    /* background: linear-gradient(270deg, #ff994f, #fa6d86); */
+    background: linear-gradient(270deg, #62cff4, #2c67f2);
+    margin-top: 5px;
+    /* box-shadow: 0 0 10px #fa6d86; */
+    box-shadow: 0 0 5px #2c67f2;
+    letter-spacing: .75px;
+    cursor: pointer;
+}
+
+form button:hover {
+    box-shadow: none;
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
+@media (max-width:800px) {
+    .item {
+        width: 80vw;
+    }
+}
+
+/* ==ALERT message contact form styling== */
+.alert {
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    gap: 10px;
+}
+
+.alert.success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.alert.error {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+.alert i {
+    font-size: 1.5em;
+}
+
+.alert strong {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ===FOOTER SECTION=== */
 footer {
     height: 30vh;
