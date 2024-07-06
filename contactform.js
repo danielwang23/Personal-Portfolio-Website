@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                alert("Message sent successfully!");
+                alert("Message sent successfully! I will get back to you as soon as I can.");
                 form.reset(); // Reset the form after successful email send
             } else {
                 alert("Message failed to send!");
