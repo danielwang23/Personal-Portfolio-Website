@@ -33,12 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
         
         fetch(form.action, {
             method: 'POST',
-            body: formData
+            body: formDataS
         })
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                alert("Message sent successfully! I will get back to you as soon as I can.");
+                alert("Message sent successfully! I will reply to you soonS.");
                 form.reset(); // Reset the form after successful email send
             } else {
                 alert("Message failed to send!");
