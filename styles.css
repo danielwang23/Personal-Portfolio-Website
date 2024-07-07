@@ -690,16 +690,10 @@ html {
 
 
 
-/* ====Styled JS For this part==== */
-.skills-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    display: 
-    
-}
+/* ====Languages Styled JS For this part==== */
+/* NOT USED ANYMORE */
 
-.skill-box {
+/* .skill-box {
     display: flex;
     align-items: center;
     background-color: #f9f9f9;
@@ -708,7 +702,7 @@ html {
     border-radius: 5px;
     padding-top: 10px;
     margin-left: 2rem;
-    /* margin-right: 55%; */
+    
 }
 
 .skill-box img {
@@ -718,7 +712,7 @@ html {
 }
 
 .skill-box p {
-    flex: 0 0 80px; /* Fixed width to align progress bars */
+    flex: 0 0 80px; 
     margin: 0;
 }
 
@@ -735,9 +729,91 @@ html {
     background-color: #5b8cff;;
     text-align: right;
     
+} */
+/* ====^^^Above Stuff NOT USED^^^===== */
+
+.skills-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: -10px;
+}
+
+.skill-divider-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002641;
+    color: #f7f1e3;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+    justify-content: space-evenly;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 0px;
+}
+
+.skill-divider-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.skill-divider-box i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+}
+
+.skill-divider-box:hover i {
+    color: #84bfff;
+}
+
+.skill-divider-box strong {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ef8e8e;
+}
+
+.skill-divider-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-divider-box li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.skill-divider-box.backend {
+    background-color: #12456A;
+}
+
+.skill-divider-box.other {
+    width: 500px;
+    height: auto;
+    padding: 30px;
+    background-color: #326B95;
+}
+
+.other-lists {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.other-lists ul {
+    margin: 0 20px; /* Add margin to the left and right of each list */
 }
 
 
+
+/* Certifications Section */
 .certifications {
     margin-top: 2rem;
     flex-direction: column;

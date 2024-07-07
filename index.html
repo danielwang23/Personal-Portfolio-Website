@@ -32,11 +32,11 @@
                 </li>
                 <li class="navbar__item">
                     <a href="#projectslink" class="navbar__links">Projects</a>
-                    <!--Apps, Websites, research done (biostats R), etc-->
+                    <!--Apps, Websites, research, etc-->
                 </li>
                 <li class="navbar__item">
                     <a href="#contactlink" class="navbar__links">Contact</a>
-                    <!--Resume Link, Contact Email, Location Based-->
+                    <!--Resume Link, Contact Email, Location -->
                 </li>
                 <li class="navbar__item">
                     <a href="./Daniel_Resume_For_Website.pdf" target="_blank" class="navbar__links"><i class="fa-solid fa-file-pdf"></i></a>
@@ -197,7 +197,52 @@
                 <div class="left-section">
                     <div class="Languages">
                         <h3 class="expsection-title">Languages & Skills:</h3>
-                        <div id="skills-list"></div>
+                        <div id="skills-list" class="skills-list">
+                            <!-- Frontend Section -->
+                            <div class="skill-divider-box frontend">
+                                <i class="fa-solid fa-code"></i>
+                                <strong>Frontend</strong>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Swift</li>
+                                </ul>
+                            </div>
+
+                            <!-- Backend Section -->
+                            <div class="skill-divider-box backend">
+                                <i class="fa-solid fa-server"></i>
+                                <strong>Backend</strong>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Java</li>
+                                    <li>R</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </div>
+
+                            <!-- Other Section -->
+                            <div class="skill-divider-box other">
+                                <i class="fa-solid fa-computer"></i>
+                                <!-- <i class="fa-solid fa-cloud"></i> -->
+                                <div class="other-lists">
+                                    <ul>
+                                        <strong>Other</strong>
+                                        <li>Git/Github</li>
+                                        <li>Biopython</li>
+                                        <li></li>
+                                    </ul>
+                                    <ul>
+                                        <strong>ML</strong>
+                                        <li>Sci-kit Learn</li>
+                                        <li>NumPy</li>
+                                        <li>PyTorch</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="certifications">
                         <h3 class="expsection2-title">Certifications:</h3>
@@ -221,17 +266,6 @@
                     </div>
                 </div>
                 <div class="right-section">
-                    <!-- <h3 class="resume-title">Resume:</h3>
-                    <div class="resume-content">
-                        <p>
-                            Download a PDF of my Resume  
-                            <a href="./Daniel_Resume_For_Website.pdf" target="_blank"id="resume_hand_link">
-                                <i class="fa-regular fa-hand-point-right"></i> here <i class="fa-regular fa-hand-point-left"></i>
-                            </a>
-                             or in the upper-right corner.
-                        </p>
-                    </div> -->
-
                     <h3 class="expsection-title">Work Experience</h3>
                     <div class="work-experience">
                         <!-- Each experience will be a new div -->
@@ -298,7 +332,8 @@
                 </div>
             </div>
         </section>
-        <script src="./experience.js"></script>
+        <!-- <script src="./experience.js"></script> -->
+        <script src="./skillslist.js"></script>
         
 
         <div>
