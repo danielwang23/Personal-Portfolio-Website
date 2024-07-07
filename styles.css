@@ -1007,10 +1007,6 @@ html {
 }
 
 
-
-
-
-
 /*===CONTACT CONTENT STLYING===*/
 
 .Contact-Section {
@@ -1394,6 +1390,69 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+
+/* Media Screen for experience section */
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .skill-divider-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .skill-divider-box.other {
+        width: 100%;
+    }
+
+    .other-lists {
+        flex-direction: column;
+    }
+
+    .other-lists ul {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-divider-box {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .skill-divider-box i {
+        font-size: 30px;
+    }
+
+    .skill-divider-box strong {
+        font-size: 1rem;
+    }
+
+    .skill-divider-box li {
+        font-size: 0.9rem;
+    }
+
+    .resume-content p a {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .experience {
+        margin-bottom: 20px;
+    }
+}
+
+
+
 
 /*
 @media screen and (max-width: 700px) {
