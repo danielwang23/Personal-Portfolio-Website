@@ -755,11 +755,12 @@ html {
     flex-wrap: wrap;
     gap: 20px;
     padding: 2rem;
-    justify-content: center;
+    justify-content: space-around; /*Change to spacebetween if want new one to start from left side */
 }
 
 .project-box {
-    background-color: #53f0dd;
+    /* background-color: #53f0dd; */
+    background-color: #7BC4DB;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
@@ -782,13 +783,24 @@ html {
     background-color: coral;
 }
 
+#proj3photo img{
+    max-width: 400px;
+    max-height: 145px;
+    border-radius: 5px;
+    display: end;
+}
 
+#projectbox3 {
+    background-color: #7BDBB2;
+}
 
 
 .project-title {
     margin-bottom: 20px;
     font-size: 1.3rem;
     text-align: start;
+    /* color: rgb(237, 226, 211); */
+    color: #edebeb;
 }
 
 .project-description {
@@ -796,6 +808,7 @@ html {
     margin-bottom: 10px;
     text-align: start;
     max-width: 375px;
+    color: #edebeb;
 }
 
 .project-languages {
@@ -804,6 +817,8 @@ html {
     text-align: start;
     font-style: italic;
     font-size: 1rem;
+    color: #edebeb;
+    font-weight: bold;
 }
 
 .project-gif {
@@ -831,7 +846,7 @@ html {
 .view-project a {
     display: block;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #248eff;
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -1082,54 +1097,6 @@ form button:hover {
         width: 80vw;
     }
 }
-
-/* ==ALERT message contact form styling== */
-.alert {
-    padding: 20px;
-    margin-bottom: 15px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    display: none;
-    align-items: center;
-    gap: 10px;
-}
-
-.alert.success {
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
-    color: #3c763d;
-}
-
-.alert.error {
-    background-color: #f2dede;
-    border-color: #ebccd1;
-    color: #a94442;
-}
-
-.alert i {
-    font-size: 1.5em;
-}
-
-.alert strong {
-    font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ===FOOTER SECTION=== */
