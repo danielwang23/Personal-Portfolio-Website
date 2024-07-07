@@ -509,7 +509,7 @@ html {
 /*===EXPERIENCE CONTENT STLYING===*/
 
 .Experience-Section {
-    min-height: 100vh;
+    min-height: 150vh;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -539,12 +539,12 @@ html {
 .right-section {
     width: 50%;
     text-align: center;
-    height: 50vh; /*Adjusts size of resume div*/
+    height: 100vh; /*Adjusts size of resume div*/
 }
 
-.right-section .resume-title {
+.right-section .expsection-title {
     margin-top: 0;
-    text-align: center;
+    text-align: left;
 }
 
 .expsection-title {
@@ -616,6 +616,79 @@ html {
     color: #5b8cff;
     transition: 0.05s;
 }
+
+.work-experience .experience {
+    background: linear-gradient(to top, #d9f8fd, white); /* Gradient background */
+    padding: 10px;
+    margin: 0px 0;
+    box-shadow: 0 4px 4px rgba(5, 123, 249, 0.1);
+    border-radius: 5px;
+    text-align: left;
+    height: auto; /* Fixed height */
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+
+.experience .company {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    color: #6b9bfc;
+}
+
+.experience .position {
+    font-size: 1rem;
+    padding: 5px 0px;
+    color: #485d8e;
+}
+
+.experience .year {
+    font-size: 1rem;
+    color: gray;
+    margin: 0;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.experience .description {
+    font-size: 1rem;
+    margin-top: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding-left: 20px;
+    flex-direction: column;
+    color: #1a2b53;
+}
+
+.experience .description ul {
+    padding-left: 20px; /* Adjust this value to move the bullet points to the right */
+    margin: 0;
+}
+
+.experience .description li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+.experience .research-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    color: #ef8e8e;
+}
+
+.experience .school {
+    font-size: 1rem;
+    padding: 5px 0px;
+    color: #c04745;
+}
+
+
 
 /* ====Styled JS For this part==== */
 .skills-list {
